@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using WebAPI.Models;
 
 namespace WebAPI.Controllers
 {
@@ -9,8 +8,8 @@ namespace WebAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+    };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
