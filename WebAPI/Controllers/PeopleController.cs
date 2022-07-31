@@ -58,8 +58,8 @@ namespace WebAPI.Controllers
             {
                 return BadRequest();
             }
-
-            _context.Entry(person).State = EntityState.Modified;
+            _context.MarkAsModified(person);
+            //_context.Entry(person).State = EntityState.Modified;
 
             try
             {
